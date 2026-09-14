@@ -3,6 +3,7 @@ using APIGateway.Msv.Extensions;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddGatewayServices(builder.Configuration);
+builder.Services.AddGatewayTelemetry(builder.Configuration);
 
 var app = builder.Build();
 
